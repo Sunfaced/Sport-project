@@ -8,17 +8,19 @@
     <title>Sport project</title>
 </head>
 <body>
-    <div class="modal hidden">
+    <div class="modal unvisible">
         <div class="modal__content">
-            <form id="modal__form">
-                <label for="modal__form-name"></label>
+            <h3>Заполните форму:</h3>
+            <form id="modal__form" action="">
+                <label for="modal__form-name">Имя</label>
                 <input type="text" id="modal__form-name" placeholder="">
-                <label for="modal__form-surname"></label>
+                <label for="modal__form-surname">Фамилия</label>
                 <input type="text" id="modal__form-surname" placeholder="">
-                <label for="modal__form-email"></label>
+                <label for="modal__form-email">Email</label>
                 <input type="email" id="modal__form-email" placeholder="">
                 <input type="submit" id="modal__form-submit">
             </form>
+            <div class="modal__button-close"></div>
         </div>
     </div>
     <header class="header">

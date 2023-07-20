@@ -1,6 +1,8 @@
 let cloudButton = document.querySelectorAll('.cloud__button');
 let cloudButtonClose = document.querySelectorAll('.cloud__button-close');
 let cloudButtonBuy = document.querySelectorAll('.cloud__button-buy');
+let modal = document.querySelector('.modal');
+let modalButtonClose = document.querySelector('.modal__button-close');
 
 cloudButton.forEach(el => {
     el.addEventListener('click', (e) => {
@@ -32,9 +34,14 @@ cloudButtonClose.forEach(el => {
 
 cloudButtonBuy.forEach(el => {
     el.addEventListener('click', (e) => {
-        let modal = document.querySelector('.modal');
-        modal.classList.remove('hidden')
+        modal.classList.remove('unvisible')
+        modal.classList.add('visible')
     })
+})
+
+modalButtonClose.addEventListener('click', () => {
+    modal.classList.remove('visible')
+    modal.classList.add('unvisible');
 })
 
 
