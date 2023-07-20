@@ -30,5 +30,10 @@ cloudButtonClose.forEach(el => {
 })
 
 
-
-
+let buttonSum = document.querySelector('.calculate__block-result')
+let elem1 = document.querySelector('.calculate__block-height').value
+let elem2 = document.querySelector('.calculate__block-height').value
+let sum = document.querySelector('.IMT')
+buttonSum.addEventListener('click', () => {
+    console.log(elem1)
+})
