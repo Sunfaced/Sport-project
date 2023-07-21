@@ -29,11 +29,31 @@ cloudButtonClose.forEach(el => {
     })
 })
 
+let btn = document.querySelector('.calculate__block-result')
+btn.onclick = function(){
+    let elem1 = +document.querySelector('.calculate__block-height').value
+    let elem2 = +document.querySelector('.calculate__block-weight').value
+    let sum = elem2 / (elem1 * elem1) * 10000
 
-let buttonSum = document.querySelector('.calculate__block-result')
-let elem1 = document.querySelector('.calculate__block-height').value
-let elem2 = document.querySelector('.calculate__block-height').value
-let sum = document.querySelector('.IMT')
-buttonSum.addEventListener('click', () => {
-    console.log(elem1)
-})
+    if(sum <= 16){
+        document.querySelector('.IMT').textContent = sum + ' 1'
+    }else if(sum > 16 && sum <= 18,5 ){
+        document.querySelector('.IMT').textContent = sum + ' 2'
+    }else if(sum > 18,5 && sum <= 25){
+        document.querySelector('.IMT').textContent = sum + ' 3'
+    }else if(sum > 25 && sum <= 30){
+        document.querySelector('.IMT').textContent = sum + ' 4'
+    }else if(sum > 30 && sum <= 35){
+        document.querySelector('.IMT').textContent = sum + ' 5'
+    }else if(sum > 35 && sum <= 40){
+        document.querySelector('.IMT').textContent = sum + ' 6'
+    }else{
+        document.querySelector('.IMT').textContent = sum + ' 7'
+    }
+    // elem1.classList.add('no-border')
+    // elem2.classList.add('no-border')
+
+}
+
+
+
