@@ -50,9 +50,6 @@ btn.onclick = function(){
     }else{
         document.querySelector('.IMT').textContent = sum + ' 7'
     }
-    // elem1.classList.add('no-border')
-    // elem2.classList.add('no-border')
-
 }
 
 
