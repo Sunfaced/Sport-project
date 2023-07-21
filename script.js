@@ -4,6 +4,7 @@ let cloudButtonBuy = document.querySelectorAll('.cloud__button-buy');
 let modal = document.querySelector('.modal');
 let modalButtonClose = document.querySelector('.modal__button-close');
 let btnUp = document.querySelector('#btn-up');
+let loginBtn = document.querySelector('.login__btn');
 
 // Обработчик событий для кнопок "Узнать цену в Услугах"
 cloudButton.forEach(el => {
@@ -66,6 +67,11 @@ btnUp.addEventListener('click', () => {
         left: 0,
         behavior: "smooth",
     })
+})
+
+// Обработчик событий для кнопки "Войти"
+loginBtn.addEventListener('click', () => {
+    window.location.href = 'login.html'
 })
 
 
