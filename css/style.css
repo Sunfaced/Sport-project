@@ -168,7 +168,7 @@ h2{
     border-radius: 7px;
     margin-right: 20px;
 }
-.calculate__block-result{
+.calculate__block-result, .calculate__block-back{
     border-radius: 10px;
     width: 120px;
     height: 40px;
@@ -179,23 +179,22 @@ h2{
 input{
     text-align: center;
 }
-input::-webkit-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+    input::-webkit-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
 }
-input::-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+    input::-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
 }
-input:-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+    input:-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
 }
-input:-ms-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+    input:-ms-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
 }
-input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;
+    input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;
 }
-input:focus::-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+    input:focus::-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
 }
-input:focus:-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+    input:focus:-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
 }
-input:focus:-ms-input-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+    input:focus:-ms-input-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
 }
-
 footer{
     background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
 }
@@ -227,6 +226,13 @@ footer{
     justify-content: space-between
 }
 
+.delete__border{
+    border: none;
+    background-color: white;
+}
+
 .hidden{
     display: none;
 }
+
+
