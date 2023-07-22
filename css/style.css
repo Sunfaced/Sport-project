@@ -32,8 +32,10 @@ a{
 }
 
 header{
-    /*position: sticky;*/
-    /*top: 0;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
     background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
 }
 
@@ -57,7 +59,7 @@ header{
 }
 
 .navigate-link{
-    padding: 53px 55px;
+    padding: 38px 55px;
     
 }
 
@@ -73,7 +75,7 @@ main{
 }
 .background__photo-1 img{
     width: 100%;
-    height: calc(100vh - 91.5px);
+    height: 100vh;
 }
 h1{
     text-align: center;
