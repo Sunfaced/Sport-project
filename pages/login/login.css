@@ -16,7 +16,7 @@
     background: rgba(57, 51, 54, 0.1);
 }
 
-.login__box{
+.login__box, .registration__box{
     width: 400px;
     height: 400px;
     padding: 20px;
@@ -46,7 +46,7 @@
     border: none;
     border-radius: 20px;
 }
-#btn__enter{
+.btn__enter{
     padding: 5px 8px;
     margin-top: 5px;
     margin-bottom: auto;
@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 
-#btn__reg{
+.login__btn__reg, .registration__btn__reg{
     padding: 5px 8px;
     border: none;
     border-radius: 20px;
@@ -66,9 +66,17 @@
     cursor: pointer;
 }
 
-#login:hover, #password:hover, #btn__enter:hover, #btn__reg:hover{
+#login:hover, #password:hover, #reg__login:hover, #reg__password:hover, #reg__password-repeat:hover, .btn__enter:hover, .login__btn__reg:hover, .registration__btn__reg:hover{
     box-shadow: 1px 2px 4px rgb(74, 107, 107);
     transition:  .5s;
+}
+
+#reg__password-repeat{
+    margin-bottom: auto;
+}
+
+.hidden{
+    display: none;
 }
 
 

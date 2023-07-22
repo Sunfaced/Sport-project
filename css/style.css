@@ -252,6 +252,3 @@ footer{
     opacity: 1;
     pointer-events: all;
 }
-.blur{
-    filter: blur(2px);
-}

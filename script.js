@@ -71,7 +71,7 @@ btnUp.addEventListener('click', () => {
 
 // Обработчик событий для кнопки "Войти"
 loginBtn.addEventListener('click', () => {
-    window.location.href = 'login.html'
+    window.location.href = './pages/login/login.html'
 })
 
 
