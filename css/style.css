@@ -118,12 +118,8 @@ header{
 }
 
 .navigate-link{
-<<<<<<< HEAD
     padding: 38px 55px;
     
-=======
-    padding: 53px 55px;
->>>>>>> NickyHate_branch
 }
 
 .navigate-link:hover{
@@ -304,13 +300,6 @@ footer{
     background-color: white;
 }
 
-.hidden{
-    display: none;
-}
-<<<<<<< HEAD
-
-
-=======
 .unvisible{
     transition: .7s;
     opacity: 0;
@@ -321,7 +310,9 @@ footer{
     opacity: 1;
     pointer-events: all;
 }
-.blur{
-    filter: blur(2px);
+
+.hidden{
+    display: none;
 }
->>>>>>> NickyHate_branch
+
+

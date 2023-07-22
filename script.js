@@ -4,6 +4,7 @@ let cloudButtonBuy = document.querySelectorAll('.cloud__button-buy');
 let modal = document.querySelector('.modal');
 let modalButtonClose = document.querySelector('.modal__button-close');
 let btnUp = document.querySelector('#btn-up');
+let header = document.querySelector('header');
 let loginBtn = document.querySelector('.login__btn');
 
 // Обработчик событий для кнопок "Узнать цену в Услугах"
@@ -52,11 +53,13 @@ modalButtonClose.addEventListener('click', () => {
 
 // Обработчик событий для кнопки "Вверх"
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 400){
+    if (window.scrollY > 800){
         btnUp.classList.remove('unvisible')
+        header.classList.add('unvisible')
         btnUp.classList.add('visible')
     } else {
         btnUp.classList.remove('visible')
+        header.classList.remove('unvisible')
         btnUp.classList.add('unvisible')
     }
 })
