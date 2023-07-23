@@ -28,7 +28,7 @@ btnEnter.addEventListener('click', () => {
             for (let key in data) {
                 if (data[key].login === login.value) {
                     if (data[key].password === password.value) {
-                        alert('Вы успешно вошли в аккаунт');
+                        window.location.href = '../cabinet/cabinet.html'
                         break;
                     } else {
                         alert('Неправильный пароль');

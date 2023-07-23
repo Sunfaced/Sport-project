@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url("../../img/cabinet.jpg");
+    background-size: 100% 100%;
+}
+
+.btn__return-to-main{
+    position: fixed;
+    top: 30px;
+    right: 60px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.btn__return-to-main:hover{
+    box-shadow: 1px 2px 4px rgb(74, 107, 107);
+    transition:  .5s;
+}
