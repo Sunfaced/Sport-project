@@ -81,7 +81,7 @@ a{
 .contact{
     display: flex;
     align-items: center;
-    padding: 3px 0;   
+    padding: 3px 0;
 }
 
 .contact img{
@@ -91,8 +91,10 @@ a{
 }
 
 header{
-    /*position: sticky;*/
-    /*top: 0;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
     background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
 }
 
@@ -101,7 +103,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    
+
 }
 
 .logo__svg{
@@ -116,7 +118,8 @@ header{
 }
 
 .navigate-link{
-    padding: 53px 55px;
+    padding: 35px 55px;
+
 }
 
 .navigate-link:hover{
@@ -139,7 +142,7 @@ main{
 }
 .background__photo-1 img{
     width: 100%;
-    height: calc(100vh - 91.5px);
+    height: 100vh;
 }
 h1{
     text-align: center;
@@ -203,14 +206,67 @@ h1{
     text-align: center;
     margin-top: 25px;
 }
-.calculate__block-inner{
-    display: flex;
-    flex-direction: column;
+h2{
+    margin-bottom: 25px;
+}
+.calculate__block-IMT{
+    width: 400px;
+    height: 100px;
+    background-color: gray;
+    background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid rgb(73, 72, 72);
+    margin-bottom: 30px;
+}
+.IMT{
+    padding-top: 25px;
+}
+.calculate__block-height{
+    width: 130px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 7px;
+    border-color: gray;
+}
+.calculate__block-weight{
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    margin-right: 20px;
+}
+.calculate__block-result, .calculate__block-back{
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(116, 116, 205);
+    color: white;
+    border: none;
+}
+input{
+    text-align: center;
+}
+input::-webkit-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input::-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input:-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input:focus::-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input:focus:-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input:focus:-ms-input-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
 }
 footer{
     background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
 }
-
 .footer__inner{
     display: flex;
     flex-direction: row;
@@ -239,9 +295,11 @@ footer{
     justify-content: space-between
 }
 
-.hidden{
-    display: none;
+.delete__border{
+    border: none;
+    background-color: white;
 }
+
 .unvisible{
     transition: .7s;
     opacity: 0;
@@ -252,6 +310,7 @@ footer{
     opacity: 1;
     pointer-events: all;
 }
-.blur{
-    filter: blur(2px);
+
+.hidden{
+    display: none;
 }
