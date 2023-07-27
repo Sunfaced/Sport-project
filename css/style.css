@@ -247,10 +247,20 @@ h2{
     text-align: center;
     margin-top: 25px;
 }
+<<<<<<< HEAD
 
 .calculate__block-IMT{
     width: 400px;
     height: 100px;
+=======
+h2{
+    margin-bottom: 25px;
+}
+.calculate__block-IMT{
+    width: 400px;
+    height: 100px;
+    background-color: gray;
+>>>>>>> main
     background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
     border-radius: 20px;
     margin-left: auto;
@@ -282,11 +292,15 @@ h2{
     background-color: rgb(116, 116, 205);
     color: white;
     border: none;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> main
 }
 input{
     text-align: center;
 }
+<<<<<<< HEAD
 input::-webkit-input-placeholder{
     text-indent: 0px;
     transition: text-indent 0.3s ease;
@@ -318,6 +332,23 @@ input:focus:-moz-placeholder{
 input:focus:-ms-input-placeholder{
     text-indent: 500px;
     transition: text-indent 0.3s ease;
+=======
+input::-webkit-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input::-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input:-moz-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input:-ms-input-placeholder{text-indent: 0px;   transition: text-indent 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input:focus::-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input:focus:-moz-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+}
+input:focus:-ms-input-placeholder{text-indent: 500px; transition: text-indent 0.3s ease;
+>>>>>>> main
 }
 footer{
     background: linear-gradient(to bottom right, rgb(76, 76, 119), pink);
@@ -342,6 +373,19 @@ footer{
     background-color: white;
 }
 
+<<<<<<< HEAD
+=======
+.content{
+    display: flex;
+    justify-content: space-between
+}
+
+.delete__border{
+    border: none;
+    background-color: white;
+}
+
+>>>>>>> main
 .unvisible{
     transition: .7s;
     opacity: 0;

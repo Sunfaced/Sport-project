@@ -53,7 +53,7 @@ modalButtonClose.addEventListener('click', () => {
 
 // Обработчик событий для кнопки "Вверх"
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 600){
+    if (window.scrollY > 800){
         btnUp.classList.remove('unvisible')
         header.classList.add('unvisible')
         btnUp.classList.add('visible')
@@ -122,4 +122,26 @@ btnBack.onclick = function(){
     imt.textContent = `Индекс массы тела (ИМТ) помогает узнать, внорме 
         ли ваш вес. Узнать свой ИМТ и как он влияет
         на здоровье сердца.`
+}
+
+// Слайдер
+let slides = document.querySelectorAll('.slide')
+let btnNext = document.querySelector('.slide__next')
+
+
+btnNext.onclick = function(){
+    let slidesLength = slides.length - 1 
+    let activeIndex = 0 
+    slides.forEach((elem, index) => {
+        if(!elem.classList.contains('hidden')){
+            activeIndex = index
+        }
+    })
+    if (slidesLength === activeIndex){
+        slides[0].classList.remove('hidden')
+        slides[activeIndex].classList.add('hidden')
+    } else {
+        slides[activeIndex + 1].classList.remove('hidden')
+        slides[activeIndex].classList.add('hidden')
+    }    
 }
