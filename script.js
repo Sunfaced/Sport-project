@@ -53,7 +53,7 @@ modalButtonClose.addEventListener('click', () => {
 
 // Обработчик событий для кнопки "Вверх"
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 800){
+    if (window.scrollY > 700){
         btnUp.classList.remove('unvisible')
         header.classList.add('unvisible')
         btnUp.classList.add('visible')
@@ -126,11 +126,12 @@ btnBack.onclick = function(){
 
 // Слайдер
 let slides = document.querySelectorAll('.slide')
+let btnPrev = document.querySelector('.slide__prev')
 let btnNext = document.querySelector('.slide__next')
-
+console.log(btnPrev)
 
 btnNext.onclick = function(){
-    let slidesLength = slides.length - 1 
+    let slidesLength = slides.length - 1
     let activeIndex = 0 
     slides.forEach((elem, index) => {
         if(!elem.classList.contains('hidden')){
@@ -142,6 +143,23 @@ btnNext.onclick = function(){
         slides[activeIndex].classList.add('hidden')
     } else {
         slides[activeIndex + 1].classList.remove('hidden')
+        slides[activeIndex].classList.add('hidden')
+    }    
+}
+
+btnPrev.onclick = function(){
+    let slidesLength = slides.length - 1 
+    let activeIndex = 0 
+    slides.forEach((elem, index) => {
+        if(!elem.classList.contains('hidden')){
+            activeIndex = index
+        }
+    })
+    if (activeIndex === 0){
+        slides[slidesLength].classList.remove('hidden')
+        slides[activeIndex].classList.add('hidden')
+    } else {
+        slides[activeIndex - 1].classList.remove('hidden')
         slides[activeIndex].classList.add('hidden')
     }    
 }
