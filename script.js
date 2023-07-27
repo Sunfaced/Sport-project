@@ -53,7 +53,7 @@ modalButtonClose.addEventListener('click', () => {
 
 // Обработчик событий для кнопки "Вверх"
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 700){
+    if (window.scrollY > 800){
         btnUp.classList.remove('unvisible')
         header.classList.add('unvisible')
         btnUp.classList.add('visible')
